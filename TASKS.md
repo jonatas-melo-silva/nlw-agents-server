@@ -55,3 +55,4 @@
 - [x] Comitar as alterações iniciais
 - [x] Criar repositório no GitHub
   - [x] Criei com o gh cli: `gh repo create nlw-agents-server --public --source=. --remote=origin`
+  - [x] Verificar se o repositório remoto foi criado corretamente com `gh browse`
