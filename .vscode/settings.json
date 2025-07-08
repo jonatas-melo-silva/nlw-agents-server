@@ -1,7 +1,9 @@
 {
   "cSpell.words": [
     "Comitar",
+    "initdb",
     "Jonatas",
+    "pgvector",
     "ultracite"
   ],
   "editor.formatOnSave": true,
