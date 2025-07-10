@@ -7,7 +7,10 @@
   "scripts": {
     "dev": "node --env-file .env.development --experimental-strip-types --no-warnings --watch src/server.ts",
     "start": "node --env-file .env.production --experimental-strip-types --no-warnings src/server.ts",
-    "db:seed": "node --env-file .env --experimental-strip-types --no-warnings src/db/seed.ts"
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:seed": "node --env-file .env --experimental-strip-types --no-warnings src/db/seed.ts",
+    "db:studio": "drizzle-kit studio"
   },
   "keywords": [],
   "author": "Jonatas Melo Silva",
@@ -22,6 +25,8 @@
   },
   "dependencies": {
     "@fastify/cors": "^11.0.1",
+    "@fastify/swagger": "^9.5.1",
+    "@fastify/swagger-ui": "^5.2.3",
     "drizzle-orm": "^0.44.2",
     "fastify": "^5.4.0",
     "fastify-type-provider-zod": "^5.0.1",
